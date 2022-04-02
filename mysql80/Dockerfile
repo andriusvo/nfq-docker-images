@@ -1,5 +1,5 @@
-FROM mysql:8.0
+FROM arm64v8/mysql:8.0-oracle
 
-ADD build /build
-RUN bash /build/setup_docker.sh && rm -Rf /build
+ENV MYSQL_DATABASE project
 
+COPY ./build/files/sql/ /docker-entrypoint-initdb.d/

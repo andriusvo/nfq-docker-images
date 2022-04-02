@@ -1,4 +1,4 @@
-FROM nfqlt/debian-buster
+FROM ghcr.io/0lukas/nfq-docker-images/debian-bullseye
 
 EXPOSE 25 80
 

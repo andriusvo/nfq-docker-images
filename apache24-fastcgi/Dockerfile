@@ -1,4 +1,4 @@
-FROM nfqlt/debian-jessie
+FROM ghcr.io/0lukas/nfq-docker-images/debian-bullseye
 
 ENV APACHE_DOCUMENTROOT /var/www
 ENV APACHE_RUN_DIR /var/run/apache2

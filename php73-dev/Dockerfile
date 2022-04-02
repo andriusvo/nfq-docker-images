@@ -1,4 +1,4 @@
-FROM nfqlt/php73-cli
+FROM ghcr.io/0lukas/nfq-docker-images/php73-cli
 
 EXPOSE 22
 CMD exec bash -lc 'run-parts /etc/rc.d && exec /usr/sbin/sshd -De'

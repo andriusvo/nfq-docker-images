@@ -13,7 +13,7 @@ apt-get install -y --no-install-recommends fonts-liberation
 
 
 cd /tmp
-wget -O wk.deb https://github.com/wkhtmltopdf/packaging/releases/download/0.12.6-1/wkhtmltox_0.12.6-1.buster_amd64.deb
+wget -O wk.deb https://github.com/wkhtmltopdf/packaging/releases/download/0.12.6-1/wkhtmltox_0.12.6-1.buster_arm64.deb
 dpkg -i wk.deb
 ln -s ../local/bin/wkhtmltopdf /usr/bin/wkhtmltopdf
 
