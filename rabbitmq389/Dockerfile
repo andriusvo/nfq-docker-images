@@ -1,4 +1,4 @@
-FROM nfqlt/debian-bullseye
+FROM ghcr.io/0lukas/nfq-docker-images/debian-bullseye
 
 
 EXPOSE  5672

@@ -10,7 +10,7 @@ apt-get install -y --no-install-recommends ca-certificates-java
 ES_PKG_NAME=elasticsearch-7.10.2
 
 cd /tmp/
-wget -nv -t5 -O es.tar.gz https://artifacts.elastic.co/downloads/elasticsearch/$ES_PKG_NAME-linux-x86_64.tar.gz
+wget -nv -t5 -O es.tar.gz https://artifacts.elastic.co/downloads/elasticsearch/$ES_PKG_NAME-linux-aarch64.tar.gz
 tar xzf es.tar.gz
 rm -f es.tar.gz
 mv /tmp/$ES_PKG_NAME /elasticsearch
