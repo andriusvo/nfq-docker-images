@@ -105,7 +105,7 @@ apt-get install -y --no-install-recommends \
 
 #TODO: Fallback to debian package, when xdebug is updated from RC2: https://bugs.xdebug.org/bug_view_page.php?bug_id=00001642
 cd /tmp
-XDEBUG_DEB="php7.3-xdebug_*debian11*_amd64.deb"
+XDEBUG_DEB="php7.3-xdebug_*debian11*_arm64.deb"
 
 rsync "rsync://rsync.sury.org/repositories/php/pool/main/x/xdebug/$XDEBUG_DEB" .
 dpkg -i $XDEBUG_DEB
@@ -123,8 +123,8 @@ mv /etc/php/7.3/cli/php.ini{,_orig}
 
 # install custom php modules
 apt-get install -y --no-install-recommends \
-    phyaml \
-    nfq-php-tideways
+    phyaml
+#    nfq-php-tideways
 
 
 # install dma (dragonfly mailer simple relay)
