@@ -10,7 +10,7 @@ apt-get install -y --no-install-recommends build-essential
 # Manually download and install node deb
 file="$(wget -qO - https://deb.nodesource.com/node_10.x/pool/main/n/nodejs/ \
 	| sed 's/href="\([^"]*\)">/\n\1\n/g' \
-	| grep -i '^nodejs_[0-9\.\-]*deb-1nodesource._amd64\.deb$' \
+	| grep -i '^nodejs_[0-9\.\-]*deb-1nodesource._arm64\.deb$' \
 	| sort --version-sort \
 	| tail -n1)"
 
