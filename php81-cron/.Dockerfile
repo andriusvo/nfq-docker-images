@@ -1,10 +1,5 @@
 FROM ghcr.io/0lukas/nfq-docker-images/php81-cli
 
-EXPOSE 9001
-
-ENV NFQ_SUPERVISOR_CONF_DIR /etc/supervisor/conf.d
-ENV NFQ_SUPERVISOR_ENABLE_HTTP false
-ENV NFQ_USE_STARTUP_TRIGGER false
 
 CMD exec /entrypoint.sh
 
