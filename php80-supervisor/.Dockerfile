@@ -1,4 +1,4 @@
-FROM ghcr.io/0lukas/nfq-docker-images/php81-cli
+FROM ghcr.io/0lukas/nfq-docker-images/php80-cli
 
 EXPOSE 9001
 
