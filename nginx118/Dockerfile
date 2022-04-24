@@ -1,4 +1,4 @@
-FROM nfqlt/debian-bullseye
+FROM ghcr.io/0lukas/nfq-docker-images/debian-bullseye
 
 ENV NFQ_DOCUMENT_ROOT /var/www/html
 ENV NFQ_RELOAD_PORT 1024

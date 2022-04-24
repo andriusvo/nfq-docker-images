@@ -1,4 +1,4 @@
-FROM nfqlt/debian-jessie
+FROM ghcr.io/0lukas/nfq-docker-images/debian-bullseye
 
 ENV NFQ_DOCUMENT_ROOT /var/www/
 
