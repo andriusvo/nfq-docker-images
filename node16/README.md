@@ -9,7 +9,7 @@ This image has pre-installed npm global packages
  - yarn
  - gulp-cli
  - grunt-cli
- - node-sass
+ - sass
  - bower
  - typescript
  - tslint
@@ -22,7 +22,7 @@ Available binary paths for export:
 - /usr/bin/yarn
 - /usr/bin/gulp
 - /usr/bin/grunt
-- /usr/bin/node-sass
+- /usr/bin/sass
 - /usr/bin/bower
 - /usr/bin/uglifycss
 - /usr/bin/uglifyjs
