@@ -1,4 +1,4 @@
-FROM nfqlt/debian-stretch
+FROM ghcr.io/0lukas/nfq-docker-images/debian-bullseye
 
 CMD run-parts -v /etc/rc.d
 

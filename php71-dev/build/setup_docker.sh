@@ -28,7 +28,7 @@ echo "
 "
 apt-get install -y --no-install-recommends openssh-client git git-flow
 
-wget https://packagecloud.io/github/git-lfs/packages/debian/stretch/git-lfs_3.1.2_amd64.deb/download -O /tmp/git-lfs.deb
+wget https://packagecloud.io/github/git-lfs/packages/debian/bullseye/git-lfs_3.1.2_arm64.deb/download -O /tmp/git-lfs.deb
 dpkg -i /tmp/git-lfs.deb
 rm -r /tmp/git-lfs.deb
 git lfs install --system --skip-smudge
@@ -59,7 +59,7 @@ echo 'if [ -f ~/.bash_custom ]; then . ~/.bash_custom ; fi' >> /home/project/.ba
 
 
 # install mysql-client
-apt-get install -y --no-install-recommends mysql-client
+apt-get install -y --no-install-recommends default-mysql-client
 
 
 # install composer
