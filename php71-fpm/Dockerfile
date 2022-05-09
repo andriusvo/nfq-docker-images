@@ -1,4 +1,4 @@
-FROM nfqlt/php71-cli
+FROM ghcr.io/0lukas/nfq-docker-images/php71-cli
 
 EXPOSE 9000
 CMD exec /entrypoint.sh

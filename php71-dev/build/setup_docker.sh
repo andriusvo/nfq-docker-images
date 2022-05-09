@@ -28,7 +28,7 @@ echo "
 "
 apt-get install -y --no-install-recommends openssh-client git git-flow
 
-wget https://packagecloud.io/github/git-lfs/packages/debian/stretch/git-lfs_3.1.2_amd64.deb/download -O /tmp/git-lfs.deb
+wget https://packagecloud.io/github/git-lfs/packages/debian/bullseye/git-lfs_3.1.2_arm64.deb/download -O /tmp/git-lfs.deb
 dpkg -i /tmp/git-lfs.deb
 rm -r /tmp/git-lfs.deb
 git lfs install --system --skip-smudge
@@ -36,7 +36,7 @@ git lfs install --system --skip-smudge
 
 
 echo 'Setup nice PS1 to use with git...' \
-&& wget -q "https://gist.githubusercontent.com/devopsnfq/75045ae9f3f3ad49b50a61315e22d144/raw/27dbc5aecdedd7843508b205129cf7a1329a17a6/git_bash_prompt.sh" -O /home/project/.git_bash_prompt.sh \
+&& wget -q "https://gist.githubusercontent.com/dariuskt/0e0b714a4cf6387d7178/raw/83065e2fead22bb1c2ddf809be05548411eabea7/git_bash_prompt.sh" -O /home/project/.git_bash_prompt.sh \
 && echo '. ~/.git_bash_prompt.sh' >> /home/project/.bashrc \
 && chown project:project /home/project/.git_bash_prompt.sh \
 && echo -e '\n\nDONE\n'
@@ -59,7 +59,7 @@ echo 'if [ -f ~/.bash_custom ]; then . ~/.bash_custom ; fi' >> /home/project/.ba
 
 
 # install mysql-client
-apt-get install -y --no-install-recommends mariadb-client
+apt-get install -y --no-install-recommends default-mysql-client
 
 
 # install composer
