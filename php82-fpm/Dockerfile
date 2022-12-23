@@ -1,4 +1,4 @@
-FROM nfqlt/php82-cli
+FROM ghcr.io/andriusvo/nfq-docker-images/php82-cli
 
 EXPOSE 9000
 CMD exec /entrypoint.sh

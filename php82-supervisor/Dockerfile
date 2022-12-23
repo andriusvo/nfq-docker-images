@@ -1,4 +1,4 @@
-FROM nfqlt/php81-cli
+FROM ghcr.io/andriusvo/nfq-docker-images/php82-cli
 
 EXPOSE 9001
 
