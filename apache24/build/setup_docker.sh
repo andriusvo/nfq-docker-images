@@ -5,7 +5,7 @@ set -e
 
 
 apt-get update
-apt-get install -y --no-install-recommends apache2 ca-certificates libapache2-mod-fcgid
+apt-get install -y --no-install-recommends apache2 ca-certificates libapache2-mod-fcgid php-fpm
 
 
 rm -rf /var/www/*
@@ -20,7 +20,7 @@ ls -1 /etc/apache2/mods-enabled/ | cut -d. -f 1 | sort | uniq | xargs -n1 -I{} a
 
 # enable few modules to make image somewhat usable in default configuration
 ls -1 /etc/apache2/mods-available/ | cut -d. -f1 | sort -u
-a2enmod mpm_event actions proxy proxy_fcgi rewrite
+a2enmod mpm_worker actions proxy proxy_fcgi rewrite setenvif
 
 echo > /etc/apache2/sites-enabled/000-default.conf
 
@@ -37,5 +37,3 @@ cp -frv /build/files/* /
 # Clean up APT when done.
 source /usr/local/build_scripts/cleanup_apt.sh
 rm -rf /tmp/*
-
-
